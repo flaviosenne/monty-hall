@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Present from './components/Presents'
+import Door from './components/Door'
 
 function App() {
   return (
     <div className="app">
       <h1>Problema Monty Hall</h1>
-      <Present/>
+      <Door number= "1" hasGift ={false}/>
     </div>
   );
 }

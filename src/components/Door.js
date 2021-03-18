@@ -7,12 +7,12 @@ export default class Door extends Component {
     hasGift= this.props.hasGift
     
     state ={
-    open: false,
-    selected: false
+
+        open: false,
+        selected: false
     }
-    componentDidUpdate(){
-        console.log(this.selected)
-    }
+
+    
     render(){
         return(
             <div className = "door-area">
@@ -20,7 +20,7 @@ export default class Door extends Component {
                     {this.hasGift && this.state.open ? <Gift />: ''}
                     
                 </div>
-                <div className= "door" onClick ={e => this.setState.selected = !this.state.selected}>
+                <div className= "door" onClick ={() => this.setState({selected: !this.state.selected})}>
                     <div className="number">{this.number}</div>
                     <div className="knob"></div>
                 </div>

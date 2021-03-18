@@ -31,7 +31,7 @@ function App() {
           <input
             type="text"
             id="portsAmount"
-            size="3"
+            size="1"
             value={portsAmount}
             onChange={e => setPortsAmount(e.target.value)} />
 
@@ -41,6 +41,7 @@ function App() {
           <label for="selectedPort"> Qual a porta premiada?</label>
           <input
             type="text"
+            size="1"
             id="selectedPort"
             value={selectedPort}
             onChange={e => setSelectedPort(e.target.value)} />

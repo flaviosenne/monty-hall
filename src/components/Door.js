@@ -7,7 +7,6 @@ export default class Door extends Component {
     hasGift= this.props.hasGift
     
     state ={
-
         open: false,
         selected: false
     }

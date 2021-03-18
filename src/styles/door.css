@@ -8,7 +8,7 @@
     width: 235px;
     height: 340px;
     border-bottom: 10px solid #aaa;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     font-size: 3rem;
 
     display: flex;
@@ -51,8 +51,16 @@
     margin-top: 80px;
 }
 
-.selected{
+.door-frame.selected{
    border-left: var(--selected-border); 
    border-top: var(--selected-border); 
    border-right: var(--selected-border); 
+}
+
+.number.selected{
+    color: yellow;
+}
+
+.knob.selected{
+    background-color: yellow;
 }

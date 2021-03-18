@@ -20,8 +20,8 @@ export default class Door extends Component {
                     
                 </div>
                 <div className= "door" onClick ={() => this.setState({selected: !this.state.selected})}>
-                    <div className="number">{this.number}</div>
-                    <div className="knob"></div>
+                    <div className={ this.state.selected ? "number selected": "number"}>{this.number}</div>
+                    <div className={ this.state.selected ? "knob selected": "knob"}></div>
                 </div>
             </div>
         )

@@ -64,3 +64,16 @@
 .knob.selected{
     background-color: yellow;
 }
+
+.door.open{
+    background-color: #0007;
+}
+
+.door.open .knob{
+    display: none;
+}
+
+.door.open .number{
+    display: none;
+
+}
